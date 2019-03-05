@@ -32,7 +32,7 @@ class NewRoute extends StatelessWidget {
                   overflow: TextOverflow.ellipsis,
                 ),
                 Text(
-                  "Hello world",
+                  "Hello world44566",
                   textScaleFactor: 1.5,
                 ),
                 Text.rich(TextSpan(children: [
