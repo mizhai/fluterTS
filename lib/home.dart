@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import './router.dart';
 import './btn.dart';
-
+import './image.dart';
+import './input.dart';
 class MyHomePage extends StatefulWidget {
   MyHomePage({Key key, this.title}) : super(key: key);
 
@@ -77,7 +78,7 @@ class _MyHomePageState extends State<MyHomePage> {
             style: Theme.of(context).textTheme.display1,
           ),
           FlatButton(
-            child: Text("文本页"),
+            child: Text("文本页3333"),
             textColor: Colors.blue,
             onPressed: () {
               //导航到新路由
@@ -87,11 +88,30 @@ class _MyHomePageState extends State<MyHomePage> {
             },
           ),
           RaisedButton(
-            child: Text('按钮页'),
+            child: Text('按钮页FFFF'),
             onPressed: () => {
+                  print('rrrrrrrrrrrr'),
                   Navigator.push(context,
                       new MaterialPageRoute(builder: (context) {
                     return new Btnrouter();
+                  }))
+                },
+          ),
+           RaisedButton(
+            child: Text('图片页KDGJK'),
+            onPressed: () => {
+                  Navigator.push(context,
+                      new MaterialPageRoute(builder: (context) {
+                    return new Imagerouter();
+                  }))
+                },
+          ),
+           RaisedButton(
+            child: Text('用户交互989'),
+            onPressed: () => {
+                  Navigator.push(context,
+                      new MaterialPageRoute(builder: (context) {
+                    return new Inputrouter();
                   }))
                 },
           )
