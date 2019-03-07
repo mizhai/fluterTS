@@ -3,6 +3,7 @@ import './router.dart';
 import './btn.dart';
 import './image.dart';
 import './input.dart';
+import './app.dart';
 class MyHomePage extends StatefulWidget {
   MyHomePage({Key key, this.title}) : super(key: key);
 
@@ -112,6 +113,15 @@ class _MyHomePageState extends State<MyHomePage> {
                   Navigator.push(context,
                       new MaterialPageRoute(builder: (context) {
                     return new Inputrouter();
+                  }))
+                },
+          ),
+          RaisedButton(
+            child: Text('FIRSTapp'),
+            onPressed: () => {
+                  Navigator.push(context,
+                      new MaterialPageRoute(builder: (context) {
+                    return new APProuter();
                   }))
                 },
           )
