@@ -4,6 +4,7 @@ import './btn.dart';
 import './image.dart';
 import './input.dart';
 import './app.dart';
+import './pzhome.dart';
 class MyHomePage extends StatefulWidget {
   MyHomePage({Key key, this.title}) : super(key: key);
 
@@ -124,7 +125,25 @@ class _MyHomePageState extends State<MyHomePage> {
                     return new APProuter();
                   }))
                 },
-          )
+          ),
+           RaisedButton(
+            child: Text('输入框'),
+            onPressed: () => {
+                  Navigator.push(context,
+                      new MaterialPageRoute(builder: (context) {
+                    return new APProuter();
+                  }))
+                },
+          ),
+           RaisedButton(
+            child: Text('破竹首页'),
+            onPressed: () => {
+                  Navigator.push(context,
+                      new MaterialPageRoute(builder: (context) {
+                    return new Pzhome();
+                  }))
+                },
+          ),
         ],
       ),
 
